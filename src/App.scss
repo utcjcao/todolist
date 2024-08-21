@@ -1,0 +1,36 @@
+div {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  .taskAdder, .task{
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:max-content;
+    flex:1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width:100%;
+    // min-width: max-content;
+    max-width: 280px;
+  }
+  .deleteButton {
+    width: auto;
+  }
+  .task {
+    white-space: nowrap;          
+    overflow: hidden;   
+    text-overflow: ellipsis;  
+  }
+  .task.deleting {
+    opacity: 0;
+    transform: scale(0.9);
+  }  
+}
+
+
